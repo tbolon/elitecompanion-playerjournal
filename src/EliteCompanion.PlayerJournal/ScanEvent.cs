@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace EliteCompanion.PlayerJournal
 {
@@ -56,6 +57,6 @@ namespace EliteCompanion.PlayerJournal
 
         public BodyRing[] Rings { get; set; }
 
-        public Materials Materials { get; set; }
+        public Dictionary<string, float> Materials { get; set; }
     }
 }

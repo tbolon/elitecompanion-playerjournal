@@ -1,4 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <PropertyGroup Label="Configuration">
+    <DocumentationFile>bin\Release\netstandard1.0\EliteCompanion.PlayerJournal.xml</DocumentationFile>
+  </PropertyGroup>
   <PropertyGroup>
     <TargetFramework>netstandard1.0</TargetFramework>
     <ProductName>Test</ProductName>
@@ -9,6 +12,7 @@
   <ItemGroup>
     <Compile Include="**\*.cs" />
     <EmbeddedResource Include="**\*.resx" />
+    <None Include="*.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="NETStandard.Library" Version="1.6.1" />

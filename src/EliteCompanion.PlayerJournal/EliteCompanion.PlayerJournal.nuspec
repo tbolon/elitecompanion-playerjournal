@@ -6,7 +6,9 @@
     <authors>styx31</authors>
     <owners></owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Elite Dangerous Player Journal Library</description>
+    <title>Elite Dangerous Player Journal Library</title>
+    <description>A library to help parsing of Elite Dangerous Player Journal files.</description>
+    <projectUrl>https://github.com/tbolon/elitecompanion-playerjournal</projectUrl>
     <dependencies>
       <group targetFramework=".NETStandard1.0">
         <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
@@ -17,5 +19,6 @@
   <files>
     <file src="bin\Release\netstandard1.0\EliteCompanion.PlayerJournal.dll" target="lib\netstandard1.0" />
     <file src="bin\Release\netstandard1.0\EliteCompanion.PlayerJournal.pdb" target="lib\netstandard1.0" />
+    <file src="bin\Release\netstandard1.0\EliteCompanion.PlayerJournal.xml" target="lib\netstandard1.0" />
   </files>
 </package>

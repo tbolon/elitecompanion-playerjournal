@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace EliteCompanion.PlayerJournal
+﻿namespace EliteCompanion.PlayerJournal
 {
     /// <summary>
     /// When player is killed (by a single ship or a wing).
