@@ -1,9 +1,18 @@
 namespace EliteCompanion.PlayerJournal
 {
-    public class DockedEvent : BaseEvent
+    /// <summary>
+    /// When landing at landing pad in a space station, outpost, or surface settlement.
+    /// </summary>
+    public class DockedEvent : BaseEvent, IHasStarSystem, IHasStationName
     {
+        /// <summary>
+        /// Name of station.
+        /// </summary>
         public string StationName { get; set; }
 
+        /// <summary>
+        /// Type of station, see <see cref="StationTypes"/>.
+        /// </summary>
         public string StationType { get; set; }
 
         public string StarSystem { get; set; }

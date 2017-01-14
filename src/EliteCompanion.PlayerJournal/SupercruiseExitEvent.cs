@@ -1,6 +1,6 @@
 namespace EliteCompanion.PlayerJournal
 {
-    public class SupercruiseExitEvent : BaseEvent
+    public class SupercruiseExitEvent : BaseEvent, IHasStarSystem, IHasBody
     {
         public string StarSystem { get; set; }
 

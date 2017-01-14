@@ -3,7 +3,7 @@
 namespace EliteCompanion.PlayerJournal
 {
     /// <summary>
-    /// When written: at startup, when loading from main menu into game.
+    /// When loading from main menu into game.
     /// </summary>
     public class LoadGameEvent : BaseEvent
     {

@@ -2,12 +2,27 @@ using Newtonsoft.Json;
 
 namespace EliteCompanion.PlayerJournal
 {
-    public class FSDJumpEvent : BaseEvent
+    /// <summary>
+    /// When jumping from one star system to another.
+    /// </summary>
+    public class FSDJumpEvent : BaseEvent, IHasStarSystemInfo
     {
+        /// <summary>
+        /// Name of destination starsystem.
+        /// </summary>
         public string StarSystem { get; set; }
 
+        /// <summary>
+        /// Star position, as an arrany [x, y, z] in light years.
+        /// </summary>
         public double[] StarPos { get; set; }
 
+        // not seen in current player's log
+        ////public string Body { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public string SystemAllegiance { get; set; }
 
         public string SystemEconomy { get; set; }
@@ -16,6 +31,9 @@ namespace EliteCompanion.PlayerJournal
 
         public string SystemSecurity { get; set; }
 
+        /// <summary>
+        /// Distance jumped.
+        /// </summary>
         [JsonProperty("JumpDist")]
         public float JumpDistance { get; set; }
 
@@ -23,8 +41,11 @@ namespace EliteCompanion.PlayerJournal
 
         public float FuelLevel { get; set; }
 
-        public string SystemFaction { get; set; }
+        public string[] Powers { get; set; }
 
-        public string FactionState { get; set; }
+        /// <summary>
+        /// One of <see cref="PowerPlayStates"/>.
+        /// </summary>
+        public string PowerplayState { get; set; }
     }
 }
