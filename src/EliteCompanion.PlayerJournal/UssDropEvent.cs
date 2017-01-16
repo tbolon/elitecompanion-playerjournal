@@ -9,7 +9,7 @@ namespace EliteCompanion.PlayerJournal
     {
         [JsonProperty("USSType")]
         public string UssType {get;set;}
-
+        
         [JsonProperty("USSThreat")]
         public int UssThreat { get; set; }
     }

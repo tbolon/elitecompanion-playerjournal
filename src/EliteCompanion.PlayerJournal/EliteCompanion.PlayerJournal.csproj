@@ -1,5 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
-  <PropertyGroup Label="Configuration">
+  <PropertyGroup Label="Configuration" Condition=" '$(Configuration)' == 'Release' ">
     <DocumentationFile>bin\Release\netstandard1.0\EliteCompanion.PlayerJournal.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>

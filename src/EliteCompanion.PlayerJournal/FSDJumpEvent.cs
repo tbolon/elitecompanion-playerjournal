@@ -31,6 +31,10 @@ namespace EliteCompanion.PlayerJournal
 
         public string SystemSecurity { get; set; }
 
+        public string SystemFaction { get; set; }
+
+        public string FactionState { get; set; }
+
         /// <summary>
         /// Distance jumped.
         /// </summary>
